@@ -7,10 +7,11 @@ body{
 }
 /* nav section  */
 header{
-    background-color: rgba(255, 144, 14, 0.10);;
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 40px 140px;
 }
 nav{
-    padding: 40px 140px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,18 +19,18 @@ nav{
 nav h3{
     color: var(--Dark-01, #131313);
     text-align: center;
-    font-size: 45px;
+    font-size: 2.81em;
     font-weight: 600;
 }
 nav ul{
-    display: flex
+    display: flex;
+    gap: 50px;
 }
-nav ul li{
-    margin-left: 40px;
+nav li{
     list-style: none;
     color: var(--Dark-02, #424242);
     text-align: center;
-    font-size: 18px;
+    font-size: 1.12em;
     font-weight: 500;
     line-height: 26px;
 }
@@ -37,8 +38,74 @@ nav ul li{
 /* tittle section  */
 .banner-container{
     text-align: center;
+    max-width: 862px;
+    margin: 0 auto;
+}
+.tittle{
+    color: var(--Dark-01, #131313);
+    font-size: 4em;
+    font-weight: 700;
+    margin: 10px;
+}
+.tittle-description{
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.primary-btn{
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 50px;
 }
 .banner-img{
-    /* margin: 50px 140px ; */
+    width: 100%;
 }
 
+/* Responsive media quary */
+/* Mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+}
+    nav{
+        flex-direction: column;
+        /* margin: 0px; */
+    }
+    nav ul{
+        padding: 0px;
+        gap: 20px;
+    }
+    .tittle {
+        font-size: 3.5em;
+    }
+}
+
+/* Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+}
+    nav{
+        flex-direction: column;
+        /* margin: 0px; */
+    }
+    nav ul{
+        padding: 0px;
+        gap: 40px;
+    }
+    .tittle {
+        font-size: 3.5em;
+    }
+}
