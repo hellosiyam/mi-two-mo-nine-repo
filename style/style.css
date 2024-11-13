@@ -11,15 +11,14 @@ header{
     padding: 40px 140px;
 }
 nav{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 nav h3{
-    color: var(--Dark-01, #131313);
+    color:  #131313;
     text-align: center;
-    font-size: 2.81em;
+    font-size: 2.8rem;
     font-weight: 600;
 }
 nav ul{
@@ -28,9 +27,9 @@ nav ul{
 }
 nav li{
     list-style: none;
-    color: var(--Dark-02, #424242);
+    color:  #424242;
     text-align: center;
-    font-size: 1.12em;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 26px;
 }
@@ -42,15 +41,15 @@ nav li{
     margin: 0 auto;
 }
 .tittle{
-    color: var(--Dark-01, #131313);
-    font-size: 4em;
+    color:  #131313;
+    font-size: 4rem;
     font-weight: 700;
     margin: 10px;
 }
 .tittle-description{
-    color: var(--Dark-03, #727272);
+    color:  #727272;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     margin-top: 16px;
@@ -63,7 +62,7 @@ nav li{
     background: #FF900E;
     color: #FFF;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.2rem;
     font-weight: 600;
     border: none;
     margin-top: 16px;
@@ -73,6 +72,47 @@ nav li{
     width: 100%;
 }
 
+/* main section */
+main{
+    max-width: 1503px;
+    margin: 0 auto;
+}
+/* Teams style */
+.teams-container{
+    display: flex;
+    align-items: center;
+    gap: 78px;
+    padding: 40px 140px;
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.teams-tittle{
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+}
+.teams-tittle .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-tittle .of{
+    color:  #131313;
+    font-weight: 700;
+}
+.teams-tittle .features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
 /* Responsive media quary */
 /* Mobile devices */
 @media screen and (max-width:576px) {
@@ -81,14 +121,13 @@ nav li{
 }
     nav{
         flex-direction: column;
-        /* margin: 0px; */
     }
     nav ul{
         padding: 0px;
         gap: 20px;
     }
     .tittle {
-        font-size: 3.5em;
+        font-size: 3.5rem;
     }
 }
 
@@ -99,13 +138,13 @@ nav li{
 }
     nav{
         flex-direction: column;
-        /* margin: 0px; */
+
     }
     nav ul{
         padding: 0px;
         gap: 40px;
     }
     .tittle {
-        font-size: 3.5em;
+        font-size: 3.5rem;
     }
 }
