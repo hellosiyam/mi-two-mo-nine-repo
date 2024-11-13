@@ -287,9 +287,9 @@ main{
         width: 100%;
     }
     .badge{
-        position: relative;
+        position: static;
         margin: 0px;
-        width: fit-content;
+        width: auto;
     }
     /* fact section  */
     .fact-continer{
@@ -303,6 +303,9 @@ main{
         align-items: center;
         gap: 16px;
         margin: 40px 0px;
+    }
+    .box{
+        width: 70%;
     }
     
 }
