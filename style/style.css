@@ -113,6 +113,90 @@ main{
     margin-top: 24px;
     margin-bottom: 32px;
 }
+/* Features-Section */
+.features-container{
+    display: flex;
+    gap: 100px;
+    padding: 40px 140px;
+    justify-content: end;
+}
+.features-content{
+    width:50%
+}
+.features-tittle{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 6px solid  #FF900E;
+    padding-left: 24px;
+}
+.teams-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.features-card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.card-tittle{
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.features-img{
+    width:50%
+}
+.features-img img{
+    width: 100%;
+    height: 95%;
+}
+.badge{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 16px 32px;
+    background: #FF900E;
+    position: relative;
+    margin-left: -10%;
+    bottom: 90px;
+}
+.badge-tittle{
+    color: #FFF;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+.badge-description{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+
+
+
+
 /* Responsive media quary */
 /* Mobile devices */
 @media screen and (max-width:576px) {
@@ -144,6 +228,23 @@ main{
     }
     .teams-img img{
         width: 100%;
+    }
+    /* Features-Section */
+    .features-container{
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+    .features-content {
+        width: 100%;
+    }
+    .features-img{
+        width: 100%;
+    }
+    .badge{
+        position: static;
+        margin: 0px;
+        width: auto;
     }
 }
 
@@ -180,4 +281,23 @@ main{
     .teams-img img{
         width: 100%;
     }
+    /* Features-Section */
+    .features-container{
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+    .features-content {
+        width: 100%;
+    }
+    .features-img{
+        width: 100%;
+    }
+    .badge{
+        position: relative;
+        margin: 0px;
+        width: fit-content;
+    }
+    
+    
 }
