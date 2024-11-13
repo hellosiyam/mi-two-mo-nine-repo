@@ -75,7 +75,7 @@ nav li{
 /* main section */
 main{
     max-width: 1503px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 /* Teams style */
 .teams-container{
@@ -129,6 +129,22 @@ main{
     .tittle {
         font-size: 3.5rem;
     }
+    /* main section */
+    main{
+        padding: 20px;
+    }
+    /* Teams-container */
+    .teams-container{
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+    .teams-img{
+        grid-template-columns: 1fr;
+    }
+    .teams-img img{
+        width: 100%;
+    }
 }
 
 /* Medium Devices */
@@ -146,5 +162,22 @@ main{
     }
     .tittle {
         font-size: 3.5rem;
+    }
+    /* main section */
+    main{
+        padding: 50px;
+    }
+    /* team section  */
+    .teams-container{
+        flex-direction:column-reverse;
+        gap: 0px;
+        padding: 0px;
+    }
+    .teams-img{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .teams-img img{
+        width: 100%;
     }
 }
