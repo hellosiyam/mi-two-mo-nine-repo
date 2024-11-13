@@ -192,6 +192,51 @@ main{
     margin-top: 0px;
 }
 
+/* Facts Section */
+.fact-continer{
+    padding: 40px 140px;
+}
+.fact-contain{
+    width: 542px;
+}
+.fact-tittle{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 16px 0px;
+}
+.fact-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.fact-box{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 80px 0px;
+}
+.box{
+    width: 170px;
+    height: fit-content;
+    padding: 32px;
+    border-radius: 8px;
+    border: .1rem solid #FF900E;
+   text-align: center;
+}
+.box-tittle{
+    color:#424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 4px 0px;
+}
+.box-detail{
+    color:#727272;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 4px 0px;
+}
 
 
 
@@ -242,14 +287,28 @@ main{
         width: 100%;
     }
     .badge{
-        position: static;
+        position: relative;
         margin: 0px;
+        width: fit-content;
+    }
+    /* fact section  */
+    .fact-continer{
+        padding: 0px;
+    }
+    .fact-contain{
         width: auto;
     }
+    .fact-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 40px 0px;
+    }
+    
 }
 
 /* Medium Devices */
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width:576px) and (max-width:1024px) {
     header{
         padding: 50px;
 }
@@ -298,6 +357,22 @@ main{
         margin: 0px;
         width: fit-content;
     }
-    
+    /* fact section  */
+    .fact-continer{
+        padding: 0px;
+    }
+    .fact-contain{
+        width: auto;
+    }
+    .fact-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 16px;
+        margin: 40px 0px;
+    }
+    .box{
+        width: auto;
+    }
     
 }
