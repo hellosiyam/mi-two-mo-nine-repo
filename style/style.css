@@ -1,0 +1,44 @@
+body{
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+/* nav section  */
+header{
+    background-color: rgba(255, 144, 14, 0.10);;
+}
+nav{
+    padding: 40px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex
+}
+nav ul li{
+    margin-left: 40px;
+    list-style: none;
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* tittle section  */
+.banner-container{
+    text-align: center;
+}
+.banner-img{
+    /* margin: 50px 140px ; */
+}
+
