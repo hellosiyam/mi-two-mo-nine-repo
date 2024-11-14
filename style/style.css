@@ -118,7 +118,7 @@ main{
     display: flex;
     gap: 100px;
     padding: 40px 140px;
-    justify-content: end;
+    justify-content:end;
 }
 .features-content{
     width:50%
@@ -357,7 +357,7 @@ footer{
         gap: 50px;
         align-items: center;
     }
-    
+
     /* Footer Section */
     footer{
         margin:20px;
